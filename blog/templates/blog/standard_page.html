@@ -1,0 +1,18 @@
+{% extends 'bbs/page.html' %}
+{% load wagtailuserbar %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+{% wagtailuserbar %}
+<div class="container blog">   
+        <div class="post row">
+            <div class="col-md-9">
+                <h2>{{ self.title }}</h2>
+    
+                <div class="post-content">
+                    {{ self.body | richtext }}
+                </div>
+            </div>
+        </div>  
+</div>
+{% endblock %}

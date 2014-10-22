@@ -1,0 +1,67 @@
+{% extends 'bbs/layout.html' %}
+{% load staticfiles %}
+{% load wagtailuserbar %}
+{% load wagtailcore_tags %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'lib/leaflet/leaflet.css' %}" />
+    <link rel="stylesheet" href="{% static 'social.css' %}" />
+    <link rel="stylesheet" href="{% static 'map.css' %}" />
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'lib/leaflet/leaflet.js' %}" ></script>
+    <script type="text/javascript" src="{% static 'social.js' %}" ></script>
+    <script type="text/javascript" src="{% static 'map.js' %}" ></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            setTimeout('init()',100);
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+{% wagtailuserbar %}
+<div id="wrapper" class="absolute">
+    <div class="container" >
+        <div id="buttons-left"></div>
+        <div id="buttons-right"></div>
+    </div>
+    <div id="map"></div>
+    <div class="bbs-loading">
+        <div class="bbs-loading-dialog">
+            Lade Veröffentlichungen ...
+        </div>
+    </div>
+    <div class="bbs-modal">
+        <div class="bbs-modal-dialog">
+            <div class="bbs-modal-dialog-close">
+                <a class="leaflet-popup-close-button" href="#close">×</a>
+            </div>
+            <div class="bbs-modal-dialog-body">
+                {{ self.body | richtext }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="absolute">
+    <div class="container">
+        <div id="footer-left">
+            <label class="checkbox" class="checkbox">
+                <input type="checkbox" name="old"> Veröffentlichungen mit abgelaufener Frist anzeigen
+            </label>
+            <div id="social" class="visible-md visible-lg">
+                <div id="facebook"></div>
+                <div id="twitter"></div>
+                <div id="gplus"></div>
+            </div>
+        </div>                                            
+        <div id="footer-right" class="attribution">                
+            Powered by <a href="http://leaflet.cloudmade.com">Leaflet</a>
+            Map data © 2012 OpenStreetMap contributors
+        </div>
+    </div>
+</div>
+{% endblock %}
