@@ -14,6 +14,9 @@
     <script type="text/javascript" src="{% static 'social.js' %}" ></script>
     <script type="text/javascript" src="{% static 'map.js' %}" ></script>
     <script type="text/javascript">
+        var _tiles_url = "{{tilesUrl}}";
+        var _tiles_opt = {{tilesOpt|safe}};
+        var _default_view = {{defaultView|safe}};
         $(document).ready(function() {
             setTimeout('init()',100);
         });

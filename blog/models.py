@@ -42,27 +42,18 @@ HomePage.promote_panels = [
 
 # Standard page
 class StandardPage(Page):    
-    body = RichTextField(blank=True)
-    feed_image = models.ForeignKey(
-        'wagtailimages.Image',
-        null=True,
-        blank=True,
-        on_delete=models.SET_NULL,
-        related_name='+'
-    )
-    indexed_fields = ('intro', 'body', )
+    body = RichTextField(blank=True)    
+    indexed_fields = ('body',  )
 
 StandardPage.content_panels = [
-    FieldPanel('title', classname="full title"),
-    FieldPanel('intro', classname="full"),
-    
-    FieldPanel('body', classname="full"),
+    FieldPanel('title', classname="full title"),      
+    FieldPanel('body', classname="full")
     
 ]
 
 StandardPage.promote_panels = [
     MultiFieldPanel(Page.promote_panels, "Common page configuration"),
-    ImageChooserPanel('feed_image'),
+    
 ]
 
 

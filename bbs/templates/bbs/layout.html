@@ -1,4 +1,8 @@
-{% load staticfiles %}<!DOCTYPE html>
+{% load staticfiles %}
+{% load blog_tags %}
+{% get_menu_pages as pages %} 
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Bürger baut Stadt</title>
@@ -34,9 +38,13 @@
                 <li><a href="/begriffe">Begriffe</a></li>
                 <li><a href="/orte">Liste</a></li>
                 <li><a href="/news/abonnieren">Abo</a></li>
-                <li><a href="/about">Über</a></li> 
+
+                {% for page in pages %}
+                <!--<li><a href="/about">Über</a></li> 
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="/impressum/">Impressum</a></li>
+                <li><a href="/impressum/">Impressum</a></li>-->
+                {% endfor %}
+
             </ul>
         </div>
     </nav>
@@ -54,9 +62,13 @@
                 <li><a href="/begriffe">Begriffe</a></li>
                 <li><a href="/orte">Liste</a></li>
                 <li><a href="/news/abonnieren">Abo</a></li>
-                <li><a href="/about">Über</a></li> 
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/impressum">Impressum</a></li>
+
+
+                {% for page in pages.menuitems %}
+                <li><a href="/{{page.slug}}">{{page.title}}</a></li> 
+                
+                {% endfor %}
+
             </ul>
         </div>
     </div>

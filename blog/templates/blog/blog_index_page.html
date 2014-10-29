@@ -1,21 +1,19 @@
 {% extends 'bbs/page.html' %}
 {% load wagtailuserbar %}
 
-{% load pageurl %}
+
 
 {% block content %}
 {% wagtailuserbar %}
     <div class="container blog">    
 
-    {% if request.GET.tag|length %}
-        <h4>Showing posts tagged as {{ request.GET.tag|safe }} <a href=" {% pageurl self %} ">Show all</a></h4>
-    {% endif %}
+    
 
     <div class="list-group">        
         {% for blog in blogs %}
             {% include "blog/includes/blog_list_item.html" %}
         {% empty %}
-            No blogs found
+            Es existieren keine Blogeinträge
         {% endfor %}
     </div>
 
@@ -28,7 +26,7 @@
             {% endif %}
         </div>
         <div class="col-sm-4 pages">
-            Page {{ blogs.number }} of {{ blogs.paginator.num_pages }}
+            Seite {{ blogs.number }} von {{ blogs.paginator.num_pages }}
         </div>
         <div class="col-sm-4 next">
             {% if blogs.has_next %}
