@@ -1,0 +1,39 @@
+[
+{
+     "pk": 3, 
+     "model": "blog.homepage", 
+     "fields": {
+          "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p><p><br/></p>"
+     }
+},
+{
+     "pk": 5, 
+     "model": "blog.standardpage", 
+     "fields": {
+          "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p><p><br/></p>"
+     }
+},
+{
+     "pk": 8, 
+     "model": "blog.standardpage", 
+     "fields": {
+          "body": "<p><strong></strong></p><embed embedtype=\"media\" url=\"https://vimeo.com/65678345\"/>\n\n<strong><br/></strong><p></p><p><strong>Worum geht es hier ?</strong><br/></p><p>Bevor in Berlin gebaut werden kann, m\u00fcssen daf\u00fcr h\u00e4ufig erst die rechtlichen Grundlagen geschaffen werden. So kann es beispielsweise sein, dass bevor ein Haus gebaut werden darf, erst der entsprechende<a href=\"http://buergerbautstadt.de/info/\">Bebauungsplan</a>\u00a0ge\u00e4ndert werden muss. Bei gro\u00dfen infrastrukturellen Bauvorhaben wie beispielsweise dem Bau einer Autobahn, muss meist ein\u00a0<a href=\"http://buergerbautstadt.de/info/\">Planfeststellungsverfahren</a>\u00a0durchgef\u00fchrt werden. In beiden F\u00e4llen \u2013 dem Bebauungsplanverfahren also auch dem Planfeststellungsverfahren \u2013 ist die Beteiligung der B\u00fcrger vorgesehen. Das hei\u00dft, dass die Pl\u00e4ne \u00fcber einen bestimmten Zeitraum (meist um die vier \u00a0Wochen) \u00f6ffentlich ausgelegt werden m\u00fcssen und B\u00fcrger sich \u2013 je nach Verfahren \u2013 \u00a0dazu \u00e4u\u00dfern k\u00f6nnen, Einwendungen einreichen k\u00f6nnen oder Ideen einbringen k\u00f6nnen. Die Informationen, welche Pl\u00e4ne wann, wo und wie lange ausliegen, werden im Amtsblatt, in den Printausgaben regionaler Zeitungen oder \u2013 in Berlin \u2013 auf diversen Webseiten ver\u00f6ffentlicht. Problem dabei ist, dass sie so f\u00fcr B\u00fcrger meist schwer zu finden sind. Mithilfe unserer Webseite\u00a0B\u00fcrgerBautStadt wollen wir das \u00e4ndern.</p><p>\u00a0</p><p><strong>Welche Daten werden auf der Karte angezeigt ?</strong></p><p>Die Marker auf der Karte stehen f\u00fcr\u00a0Orte, an denen ein Bauvorhaben geplant ist und zu dem gerade die Planungsunterlagen ausliegen\u00a0oder die gerade in der BVV (<a href=\"http://de.wikipedia.org/wiki/Bezirksverordnetenversammlung\">Bezirksverordnetenversammlung</a>) verhandelt werden. Sobald die die Beteiligungsfrist abgelaufen ist oder der Ort (Bebauungsplan) in der BVV verhandelt wurde, verschwinden die Marker von der Karte. Die angezeigten Informationen stammen aus drei verschiedenen Quellen:</p><ol><li>Mit Unterst\u00fctzung der Naturschutzverb\u00e4nde werten wir das w\u00f6chentlich erscheinende\u00a0<strong>Amtsblatt von Berlin</strong>\u00a0manuell aus.</li><li>Wir schauen regelm\u00e4\u00dfig in den\u00a0<strong>Ratsinformationssystemen der Bezirke</strong>, ob Bebauungspl\u00e4ne in den BVVs verhandelt wurde. Der Code dazu befindet sich\u00a0<a href=\"https://github.com/BuergerbautStadt/bvvscrape\">hier</a>. Wie gut das funktioniert, testen wir derzeit noch.</li><li>Die Geodaten zu den einzelnen Bebauungspl\u00e4nen beziehen wir aus einem\u00a0<strong><a href=\"http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=bplan@senstadt&amp;type=WMS\">offenen Datensatz der Senatsverwaltung der Stadtentwicklung von Berlin</a>.\u00a0</strong></li></ol><p>Eine Liste aller \u00a0Daten aus dem Datensatz der \u00a0Senatsverwaltung f\u00fcr Stadtentwicklung ist\u00a0<a href=\"http://buergerbautstadt.de/orte/\">hier</a>\u00a0zu finden. \u00dcber Details sind \u2013 sofern vorhanden \u2013 Informationen aus Amtsblatt und BVV zu finden. Neben der Karten -und Listenansicht ist es auch m\u00f6glich,\u00a0die Informationen zu\u00a0<a href=\"http://buergerbautstadt.de/news/abonnieren/\">abonnieren</a>\u00a0- das hei\u00dft Interessierte k\u00f6nnen ihre Email-Adresse f\u00fcr bestimmte Bezirke angeben und erhalten automatisch eine Email, wenn etwas neues ausliegt.</p><p>\u00a0</p><p><strong>B\u00fcrger baut Stadt auch in anderen St\u00e4dten?</strong></p><p>Bisher ist B\u00fcrger baut Stadt nur in Berlin verf\u00fcgbar. Wir arbeiten aber daran, auch andere St\u00e4dte einbinden zu k\u00f6nnen. Wenn Eure Stadt auch dabei sein soll, meldet Euch einfach (z.B.\u00a0<a href=\"http://blog.buergerbautstadt.de/contact/\">so</a>). Den Code von B\u00fcrger baut Stadt gibt es zudem auch auf\u00a0<a href=\"https://github.com/BuergerbautStadt\">GitHub</a>.</p><p>\u00a0</p><p><strong>Wer sind wir und wie kam es zu dem Projekt ?</strong></p><p>Im November 2012 haben wir B\u00fcrgerBautStadt beim\u00a0Ideenwettbewerb\u00a0<a href=\"http://stadtlandcode.de/\">Stadt Land &lt;Code&gt;</a>\u00a0der\u00a0<a href=\"http://okfn.de/\">Open Knowledge Foundation Deutschland</a>\u00a0vorgestellt und wurden bis Mai 2013 mit einem Stipendium bei der Umsetzung unterst\u00fctzt.</p><p>Wir \u2013 das sind mittlerweile:</p><p>Design &amp; Film: \u00a0<a href=\"http://joannadauner.de/\">Joanna Dauner</a>\u00a0und\u00a0<a href=\"http://www.marlenekettner.com/\">Marlene Kettner</a><br/>Programmierung:\u00a0\u00a0<a href=\"https://github.com/eFrane\">Stefan Graupner</a>,\u00a0<a href=\"https://github.com/LucasJ\">Lucas Jacob</a>,\u00a0<a href=\"http://jochenklar.de/\">Jochen Klar</a>,\u00a0<a href=\"http://magdalenanoffke.de/\">Magdalena Noffke</a></p>"
+     }
+},
+{
+     "pk": 6, 
+     "model": "blog.blogindexpage", 
+     "fields": {
+          "intro": ""
+     }
+},
+{
+     "pk": 7, 
+     "model": "blog.blogpage", 
+     "fields": {
+          "body": "<p>Seit knapp 2 Monaten l\u00e4uft das Projekt\u00a0<a href=\"http://codefor.de/\">Code for Germany</a>\u00a0und darin auch das Teilprojekt\u00a0<a href=\"http://codefor.de/berlin/index.html\">Code for Berlin</a>. Code for Germany wir von der\u00a0<a href=\"http://okfn.de/\">Open Knowledge Foundation</a>\u00a0organisiert und hat zum Ziel, in ganz Deutschland lokale Gruppen zu initiieren, die sich regelm\u00e4\u00dfig treffen und\u00a0gemeinsam an n\u00fctzlichen Anwendungen und Visualisierungen rund um offene Daten und digitale Werkzeuge f\u00fcr B\u00fcrgerinnen arbeiten.</p><p>Wir sind auch bei der Berliner Gruppe mit dabei. Wir treffen uns jeden Mittwoch um 19.00 Uhr bei Wikimedia (Tempelhofer Ufer 23/24, 10963 Berlin) und arbeiten an verschiedenen Anwendungen, darunter auch\u00a0<a href=\"http://buergerbautstadt.de/\">B\u00fcrger baut Stadt</a>. Wer Lust hat mal vorbeizukommen, ist gerne gesehen. Wir freuen uns \u00fcber neue Gesichter.</p><p><embed alt=\"logo\" embedtype=\"image\" format=\"fullwidth\" id=\"1\"/><br/></p>", 
+          "date": "2014-10-29", 
+          "feed_image": null
+     }
+}
+]

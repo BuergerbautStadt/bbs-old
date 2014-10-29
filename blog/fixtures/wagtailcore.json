@@ -1,0 +1,211 @@
+[
+{
+     "pk": 1, 
+     "model": "wagtailcore.site", 
+     "fields": {
+          "root_page": 3, 
+          "hostname": "localhost", 
+          "port": 80, 
+          "is_default_site": true
+     }
+},
+{
+     "pk": 1, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "Root", 
+          "numchild": 1, 
+          "show_in_menus": false, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 1, 
+          "search_description": "", 
+          "content_type": 19, 
+          "has_unpublished_changes": false, 
+          "owner": null, 
+          "path": "0001", 
+          "url_path": "/", 
+          "expired": false, 
+          "slug": "root", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 2, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "Welcome to your new Wagtail site!", 
+          "numchild": 1, 
+          "show_in_menus": false, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 2, 
+          "search_description": "", 
+          "content_type": 19, 
+          "has_unpublished_changes": false, 
+          "owner": null, 
+          "path": "00010001", 
+          "url_path": "/home/", 
+          "expired": false, 
+          "slug": "home", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 3, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "B\u00fcrger baut Stadt", 
+          "numchild": 3, 
+          "show_in_menus": false, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 3, 
+          "search_description": "", 
+          "content_type": 36, 
+          "has_unpublished_changes": false, 
+          "owner": 1, 
+          "path": "000100010001", 
+          "url_path": "/home/burger-baut-stadt/", 
+          "expired": false, 
+          "slug": "burger-baut-stadt", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 5, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "Impressum", 
+          "numchild": 0, 
+          "show_in_menus": true, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 4, 
+          "search_description": "", 
+          "content_type": 37, 
+          "has_unpublished_changes": false, 
+          "owner": 1, 
+          "path": "0001000100010001", 
+          "url_path": "/home/burger-baut-stadt/impressum/", 
+          "expired": false, 
+          "slug": "impressum", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 6, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "Blog", 
+          "numchild": 1, 
+          "show_in_menus": true, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 4, 
+          "search_description": "", 
+          "content_type": 38, 
+          "has_unpublished_changes": false, 
+          "owner": 1, 
+          "path": "0001000100010002", 
+          "url_path": "/home/burger-baut-stadt/blog/", 
+          "expired": false, 
+          "slug": "blog", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 7, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "test", 
+          "numchild": 0, 
+          "show_in_menus": false, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 5, 
+          "search_description": "", 
+          "content_type": 40, 
+          "has_unpublished_changes": false, 
+          "owner": 1, 
+          "path": "00010001000100020001", 
+          "url_path": "/home/burger-baut-stadt/blog/test/", 
+          "expired": false, 
+          "slug": "test", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 8, 
+     "model": "wagtailcore.page", 
+     "fields": {
+          "title": "\u00dcber", 
+          "numchild": 0, 
+          "show_in_menus": true, 
+          "live": true, 
+          "seo_title": "", 
+          "depth": 4, 
+          "search_description": "", 
+          "content_type": 37, 
+          "has_unpublished_changes": false, 
+          "owner": 1, 
+          "path": "0001000100010003", 
+          "url_path": "/home/burger-baut-stadt/uber/", 
+          "expired": false, 
+          "slug": "uber", 
+          "expire_at": null, 
+          "go_live_at": null
+     }
+},
+{
+     "pk": 1, 
+     "model": "wagtailcore.grouppagepermission", 
+     "fields": {
+          "group": 2, 
+          "page": 1, 
+          "permission_type": "add"
+     }
+},
+{
+     "pk": 2, 
+     "model": "wagtailcore.grouppagepermission", 
+     "fields": {
+          "group": 2, 
+          "page": 1, 
+          "permission_type": "edit"
+     }
+},
+{
+     "pk": 3, 
+     "model": "wagtailcore.grouppagepermission", 
+     "fields": {
+          "group": 2, 
+          "page": 1, 
+          "permission_type": "publish"
+     }
+},
+{
+     "pk": 4, 
+     "model": "wagtailcore.grouppagepermission", 
+     "fields": {
+          "group": 1, 
+          "page": 1, 
+          "permission_type": "add"
+     }
+},
+{
+     "pk": 5, 
+     "model": "wagtailcore.grouppagepermission", 
+     "fields": {
+          "group": 1, 
+          "page": 1, 
+          "permission_type": "edit"
+     }
+}
+]
