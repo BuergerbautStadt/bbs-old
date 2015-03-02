@@ -4,6 +4,8 @@ bbs/local.py
 *.pyc
 .DS_Store
 
+env/*
+
 static/*
 !static/.gitkeep
 
