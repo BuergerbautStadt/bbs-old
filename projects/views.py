@@ -19,7 +19,7 @@ def orte(request):
     if vor:
         vor = tuple([int(i) for i in vor.split('-')])
         orte = orte.filter(veroeffentlichungen__ende__lte=datetime.date(*vor))
-    if nach: 
+    if nach:
         nach = tuple([int(i) for i in nach.split('-')])
         orte = orte.filter(veroeffentlichungen__ende__gte=datetime.date(*nach))
     if bezirk:
@@ -36,7 +36,7 @@ def orte(request):
         }
     else:
         response = {}
-        
+
     return HttpResponse(json.dumps(response,cls=DjangoJSONEncoder),content_type="application/json")
 
 def orte_cols(request):
@@ -73,14 +73,14 @@ def orte_rows(request):
 
     if search:
         dbrows = dbrows.filter(
-            Q(bezeichner__icontains=search) 
+            Q(bezeichner__icontains=search)
             | Q(adresse__icontains=search)
             | Q(bezirke__name__icontains=search)
         )
     else:
         dbrows = dbrows.all()
 
-    total = dbrows.count()   
+    total = dbrows.count()
 
     if nrows:
         if page:
@@ -89,7 +89,7 @@ def orte_rows(request):
             dbrows = dbrows[start:end]
         else:
             dbrows = dbrows[:int(nrows)]
-        
+
         pages = int(total / int(nrows)) + 1
     else:
         pages = 1

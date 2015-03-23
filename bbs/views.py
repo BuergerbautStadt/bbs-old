@@ -34,7 +34,12 @@ def ort(request,pk):
                 kommentar = kommentar_neu.save(commit=False)
                 kommentar.enabled = True;
                 kommentar.ort = ort
+		try:
+                	kommentar_neu.send_email()
+		except:
+			pass
                 kommentar.save()
+
 
     kommentare = Kommentar.objects.filter(ort_id = int(pk), enabled = True)
     return render(request, 'bbs/ort.html', {'ort': ort, 'kommentare': kommentare})
@@ -75,7 +80,7 @@ def create_veroeffentlichung(request):
     else:
         ort = Ort.objects.get(pk=orte_id)
 
-        if request.method == 'POST': 
+        if request.method == 'POST':
             form = CreateVeroeffentlichung(request.POST)
             if form.is_valid():
                 form.save()
